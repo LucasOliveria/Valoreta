@@ -3,7 +3,7 @@ import "./PortraitAgent.scss";
 export default function BackgroundAgent({ getAgentData, getAgentClass }) {
   return (
     <section className="class-agent">
-      <div className="class-border">
+      <div className="class-border flicker-in-1">
         <img
           className="class-icon"
           alt="agent class"
@@ -11,7 +11,7 @@ export default function BackgroundAgent({ getAgentData, getAgentClass }) {
         />
       </div>
       <img
-        className={"class-agent-body"}
+        className={"class-agent-body fade-in-alternative"}
         src={getAgentData("fullPortrait")}
         alt="agent photo"
       />

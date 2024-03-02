@@ -46,21 +46,27 @@ function App() {
       <main className="content">
         <Background />
 
-        {randomAgent && (
-          <BackgroundAgent
-            getAgentData={getAgentData}
-            getAgentClass={getAgentClass}
-          />
-        )}
-        {randomAgent && (
-          <Overview
-            getAgentData={getAgentData}
-            getAgentClass={getAgentClass}
-            abilities={abilities}
-            descriptionAbility={descriptionAbility}
-            setDescriptionAbility={setDescriptionAbility}
-          />
-        )}
+        {randomAgent &&
+          <div className="drawn">
+            {randomAgent && (
+              <BackgroundAgent
+                getAgentData={getAgentData}
+                getAgentClass={getAgentClass}
+              />
+            )}
+            {randomAgent && (
+              <Overview
+                getAgentData={getAgentData}
+                getAgentClass={getAgentClass}
+                abilities={abilities}
+                descriptionAbility={descriptionAbility}
+                setDescriptionAbility={setDescriptionAbility}
+              />
+            )}
+
+          </div>
+
+        }
 
         <Message
           randomAgent={randomAgent}

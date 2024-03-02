@@ -18,7 +18,7 @@ export default function Overview({
   }
 
   return (
-    <section className="overview-container">
+    <section className="overview-container fade-in-left">
       <strong className="overview-agent-class">
         {getAgentClass("displayName")}
       </strong>
